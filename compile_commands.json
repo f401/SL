@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/opt/c/projects/sl/build/lib/nbt",
+  "command": "/usr/local/gcc121/bin/c++  -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -o CMakeFiles/nbt.dir/NBTTags.cpp.o -c /opt/c/projects/sl/lib/nbt/NBTTags.cpp",
+  "file": "/opt/c/projects/sl/lib/nbt/NBTTags.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/nbt",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/nbt.dir/utils/ChangeTypes.c.o -c /opt/c/projects/sl/lib/nbt/utils/ChangeTypes.c",
+  "file": "/opt/c/projects/sl/lib/nbt/utils/ChangeTypes.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/nbt",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/nbt.dir/utils/EndiansUtils.c.o -c /opt/c/projects/sl/lib/nbt/utils/EndiansUtils.c",
+  "file": "/opt/c/projects/sl/lib/nbt/utils/EndiansUtils.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/nbt",
+  "command": "/usr/local/gcc121/bin/c++  -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -o CMakeFiles/nbt.dir/stream/DataIOStream.cpp.o -c /opt/c/projects/sl/lib/nbt/stream/DataIOStream.cpp",
+  "file": "/opt/c/projects/sl/lib/nbt/stream/DataIOStream.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/nbt",
+  "command": "/usr/local/gcc121/bin/c++  -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -o CMakeFiles/nbt.dir/stream/NBTIOStream.cpp.o -c /opt/c/projects/sl/lib/nbt/stream/NBTIOStream.cpp",
+  "file": "/opt/c/projects/sl/lib/nbt/stream/NBTIOStream.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/other_tools",
+  "command": "/usr/local/gcc121/bin/cc -Dother_tools_EXPORTS -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -fPIC -o CMakeFiles/other_tools.dir/CString.c.o -c /opt/c/projects/sl/lib/other_tools/CString.c",
+  "file": "/opt/c/projects/sl/lib/other_tools/CString.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/other_tools",
+  "command": "/usr/local/gcc121/bin/cc -Dother_tools_EXPORTS -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -fPIC -o CMakeFiles/other_tools.dir/CompressFile.c.o -c /opt/c/projects/sl/lib/other_tools/CompressFile.c",
+  "file": "/opt/c/projects/sl/lib/other_tools/CompressFile.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/other_tools",
+  "command": "/usr/local/gcc121/bin/c++ -Dother_tools_EXPORTS -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -fPIC -o CMakeFiles/other_tools.dir/log.cpp.o -c /opt/c/projects/sl/lib/other_tools/log.cpp",
+  "file": "/opt/c/projects/sl/lib/other_tools/log.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/lib/other_tools",
+  "command": "/usr/local/gcc121/bin/c++ -Dother_tools_EXPORTS -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -fPIC -o CMakeFiles/other_tools.dir/tool.cpp.o -c /opt/c/projects/sl/lib/other_tools/tool.cpp",
+  "file": "/opt/c/projects/sl/lib/other_tools/tool.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/c++  -I/opt/c/projects/sl/include  -std=c++17 -Wall -O3 -pg -g -o CMakeFiles/main.dir/FileBridge.cpp.o -c /opt/c/projects/sl/src/FileBridge.cpp",
+  "file": "/opt/c/projects/sl/src/FileBridge.cpp"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/keyboard.c.o -c /opt/c/projects/sl/src/keyboard.c",
+  "file": "/opt/c/projects/sl/src/keyboard.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/main.c.o -c /opt/c/projects/sl/src/main.c",
+  "file": "/opt/c/projects/sl/src/main.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/ter/consle.c.o -c /opt/c/projects/sl/src/ter/consle.c",
+  "file": "/opt/c/projects/sl/src/ter/consle.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/ter/input.c.o -c /opt/c/projects/sl/src/ter/input.c",
+  "file": "/opt/c/projects/sl/src/ter/input.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/ter/message.c.o -c /opt/c/projects/sl/src/ter/message.c",
+  "file": "/opt/c/projects/sl/src/ter/message.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/screen/ncurses_main.c.o -c /opt/c/projects/sl/src/screen/ncurses_main.c",
+  "file": "/opt/c/projects/sl/src/screen/ncurses_main.c"
+},
+{
+  "directory": "/opt/c/projects/sl/build/src",
+  "command": "/usr/local/gcc121/bin/cc  -I/opt/c/projects/sl/include  -Wall -O3 -pg -g -o CMakeFiles/main.dir/screen/ncurses_theme.c.o -c /opt/c/projects/sl/src/screen/ncurses_theme.c",
+  "file": "/opt/c/projects/sl/src/screen/ncurses_theme.c"
+}
+]
