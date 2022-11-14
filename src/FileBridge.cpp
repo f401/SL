@@ -9,7 +9,7 @@
 std::string filePath("/opt/c/projects/sl/k.dat");
 
 extern "C" {
-
+#include <stdio.h>
 	static int mX, mMinesCount;
 
 	void sl_FileBridge_save(int saveStatus) {
