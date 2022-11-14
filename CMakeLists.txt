@@ -116,7 +116,7 @@ add_subdirectory(${PROJECT_SRC_PATH})
 #install(FILES ${header_files} DESTINATION ${PROJECT_ROOT_PATH}/build/rel/include/nbt)
 install(DIRECTORY include/nbt include/other_tools DESTINATION ${CMAKE_INSTALL_PREFIX}/include/sl)
 
-install(TARGETS main nbt other_tools 
+install(TARGETS gameSL nbt other_tools 
 	RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
 	ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
 	LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib64
