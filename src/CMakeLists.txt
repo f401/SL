@@ -5,9 +5,9 @@ aux_source_directory(${PROJECT_SRC_PATH}/screen SCREEN_SRCS)
 set(COMPILE_FILES "${DIR_SRCS};${TER_SRCS};${SCREEN_SRCS}")
 set(COMPILE_DEPS ${TARGET_NBT} ${TARGET_OTHER_TOOLS} ncurses)
 
-add_executable(main ${COMPILE_FILES})
-target_link_libraries(main PRIVATE ${COMPILE_DEPS})
-target_link_options(main PUBLIC "-Wl,-rpath,../lib64")
+add_executable(gameSL ${COMPILE_FILES})
+target_link_libraries(gameSL PRIVATE ${COMPILE_DEPS})
+target_link_options(gameSL PUBLIC "-Wl,-rpath,../lib64")
 
 set(header_files 
 	${PROJECT_ROOT_PATH}/include/nbt/DataIOStream.h
