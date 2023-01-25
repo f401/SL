@@ -26,10 +26,22 @@ static void write(const char* text, int type, const char* funcName = "", unsigne
 	stream.flush();
 }
 
+class sl_exception: public std::exception
+{
+	public:
+		sl_exception(const char* msg): __msg(msg) {}
+
+		const char* what() const noexcept {
+			return __msg;
+		}
+	private:
+		const char* __msg;
+};
+
 void sl_logger_openCppStream() {
-	stream.open("/opt/c/projects/sl/sys-log.txt", ios::out);
+	stream.open("sys-log.txt", ios::out);
 	if (!stream.is_open()) {
-		throw "Log Error: can't open stream";
+		throw sl_exception("Log Error: can't open stream");
 	}
 }
 
