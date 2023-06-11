@@ -1,5 +1,5 @@
-/rust/sl/target
-/c_cpp/build
+target
+build
 aclocal.m4
-/*/Makefile.in
-/c_cpp/install-sh
+Makefile.in
+install-sh

@@ -91,7 +91,12 @@ impl Game {
         while current_x < self.max.x {
             let mut current_y = 0;
             while current_y < self.max.y {
-                println!("x: {}, y: {}: {:?}", current_x, current_y, self.at(Vector2i::new(current_x, current_y)));
+                println!(
+                    "x: {}, y: {}: {:?}",
+                    current_x,
+                    current_y,
+                    self.at(Vector2i::new(current_x, current_y))
+                );
                 current_y += 1;
             }
             current_x += 1;
