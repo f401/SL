@@ -1,6 +1,9 @@
-mod block_game;
+mod sl;
+
+use sl::block::Vector2i;
 
 fn main() {
-    let a = block_game::Game::new(block_game::Vector2i::new(10, 20));
-    a.print();
+    let vec = sl::game::Game::new(Vector2i::new(10, 20));
+    vec.print();
+
 }

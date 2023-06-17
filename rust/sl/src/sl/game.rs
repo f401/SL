@@ -1,52 +1,10 @@
-use std::{alloc, ptr, usize};
+use crate::sl::block::{Vector2i, Block, Status, What};
 use std::{alloc::Layout, ptr::NonNull};
-
-#[derive(Debug)]
-pub enum Status {
-    Open,
-    Close,
-    Flag,
-}
-
-#[derive(Debug)]
-pub enum What {
-    Num(usize),
-    Empty,
-    Mine,
-}
-
-#[derive(Debug)]
-pub struct Vector2i {
-    x: usize,
-    y: usize,
-}
-
-impl Vector2i {
-    pub fn new(x: usize, y: usize) -> Self {
-        Self { x, y }
-    }
-}
-
-#[derive(Debug)]
-pub struct Block {
-    position: Vector2i,
-    status: Status,
-    what: What,
-}
-
-impl Block {
-    pub fn new(position: Vector2i, status: Status, what: What) -> Self {
-        Self {
-            position,
-            status,
-            what,
-        }
-    }
-}
+use std::{alloc, ptr, usize};
 
 pub struct Game {
-    max: Vector2i,
-    ptr: NonNull<Block>,
+    pub max: Vector2i,
+    pub ptr: NonNull<Block>,
 }
 
 fn init_block_ptr(max: &Vector2i, ptr: *mut Block) -> *mut Block {
@@ -85,6 +43,8 @@ impl Game {
     pub fn at(&self, pos: Vector2i) -> Block {
         unsafe { ptr::read(self.ptr.as_ptr().add(pos.x + pos.y * self.max.x)) }
     }
+
+    pub fn generateMines(count: usize) {}
 
     pub fn print(&self) {
         let mut current_x = 0;
