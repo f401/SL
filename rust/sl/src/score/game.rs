@@ -37,14 +37,25 @@ fn init_block_ptr(max: &Vector2i, ptr: *mut Block) -> *mut Block {
 impl Index<Vector2i> for Game {
     type Output = Block;
 
-    fn index(& self, index: Vector2i) -> &Self::Output {
-        unsafe { & *(self.ptr.as_ptr().add(index.x + index.y * self.max.x)) }
+    fn index(&self, index: Vector2i) -> &Self::Output {
+        unsafe { &*(self.ptr.as_ptr().add(index.x + index.y * self.max.x)) }
     }
 }
 
 impl IndexMut<Vector2i> for Game {
     fn index_mut(&mut self, index: Vector2i) -> &mut Self::Output {
         unsafe { &mut *(self.ptr.as_ptr().add(index.x + index.y * self.max.x)) }
+    }
+}
+
+impl Drop for Game {
+    fn drop(&mut self) {
+        unsafe {
+            alloc::dealloc(
+                self.ptr.as_ptr() as *mut u8,
+                Layout::array::<Block>(self.max.x * self.max.y).expect("Error When Drop"),
+            );
+        }
     }
 }
 
@@ -92,9 +103,4 @@ impl Game {
             current_x += 1;
         }
     }
-}
-
-fn test90() {
-    let mut vec = vec![1, 2, 3];
-    vec.index(123);
 }
