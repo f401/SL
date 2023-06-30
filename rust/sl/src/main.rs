@@ -7,5 +7,8 @@ fn main() {
     vec.print();
     println!("After Generate");
     vec.generate_mines_default(20);
-    vec.print();
+    vec.print_layout();
+    vec.generate_numbers();
+    println!();
+    vec.print_layout();
 }
