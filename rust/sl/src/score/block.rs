@@ -1,3 +1,5 @@
+use super::game::Game;
+
 #[derive(Debug)]
 pub enum Status {
     Open,
@@ -28,6 +30,13 @@ pub struct Block {
 impl Vector2i {
     pub fn new(x: usize, y: usize) -> Self {
         Self { x, y }
+    }
+
+    pub fn up(&self) -> Option<Self> {
+        if self.x == 0 {
+            return None;
+        }
+        return Some(Vector2i::new(self.x - 1, self.y));
     }
 }
 
