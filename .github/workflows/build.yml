@@ -36,10 +36,10 @@ jobs:
     - name: Run autogen
       run: cd c_cpp &&  sh autogen.sh
     - name: Run configure
-      run: ./configure
+      run: cd c_cpp &&  ./configure
     - name: Run make
-      run: make
+      run: cd c_cpp &&  make
     - name: Run check
-      run: make check
+      run: cd c_cpp && make check
     - name: Run distcheck
-      run: make distcheck
+      run: cd c_cpp && make distcheck
